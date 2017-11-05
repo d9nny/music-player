@@ -1,0 +1,86 @@
+@import './variables.less';
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: @text-color;
+}
+
+html body {
+    background-color: white;
+    font-family: @font-family;
+    font-size: @font-size-base;
+    letter-spacing: normal;
+    color: @text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: @font-weight-base;
+    letter-spacing: 1px;
+    color: @heading-color;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+    font-weight: @font-weight-semi-bold;
+}
+
+p, input, textarea {
+    color: @text-color;
+    font-size: inherit;
+    letter-spacing: .5px;
+}
+
+span, a {
+    font-size: @font-size-base;
+    letter-spacing: .5px;
+}
+
+b, strong {
+    font-weight: @font-weight-semi-bold;
+    letter-spacing: inherit;
+    font-size: inherit;
+}
+
+:focus {
+    outline: none;
+}
+
+a,
+a:not([href]):not([tabindex]) {
+    color: @color-one;
+    cursor: pointer;
+    font-weight: @font-weight-semi-bold;
+    letter-spacing: 1px;
+
+    &:hover,
+    &:active {
+        color: @color-two;
+        text-decoration: none;
+    }
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}

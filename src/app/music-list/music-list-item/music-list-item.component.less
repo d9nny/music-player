@@ -1,0 +1,56 @@
+@import '../../../styles/styles.less';
+
+.list-item {
+    padding: 5px 0;
+    cursor: pointer;
+
+    &.selected {
+        background-color: @off-white-2;
+
+        span {
+            color: @color-one;
+        }
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+    }
+
+    span {
+        padding: 0 10px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .title {
+        width: 350px;
+    }
+    .artist {
+        width: 300px;
+    }
+    .date {
+        width: 100px;
+    }
+    .genre {
+        width: 300px;
+    }
+    .duration {
+        width: 60px;
+        text-overflow: unset;
+        overflow: unset;
+    }
+
+    @media (max-width: 700px) {
+        .date {
+            display: none;
+        }
+        .genre {
+            display: none;
+        }
+    }
+
+}

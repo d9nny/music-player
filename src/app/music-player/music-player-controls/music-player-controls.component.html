@@ -1,0 +1,18 @@
+<div class="controls vertical-align">
+    <button (click)="previous.emit()">
+        <i class="fa fa-backward"></i>
+    </button>
+
+    <button *ngIf="playing"
+            (click)="pauseplay.emit()">
+        <i class="fa fa-pause"></i>
+    </button>
+    <button *ngIf="!playing"
+            (click)="pauseplay.emit()">
+        <i class="fa fa-play"></i>
+    </button>
+
+    <button (click)="next.emit()">
+        <i class="fa fa-forward"></i>
+    </button>
+</div>

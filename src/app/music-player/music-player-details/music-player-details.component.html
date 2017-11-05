@@ -1,0 +1,16 @@
+<div class="details-container">
+    <div *ngIf="song">
+        <div class="details">
+            <h5 class="title text-center">{{ song.title }}</h5>
+            <div class="">
+                <span class="time left">{{ formatTime(elapsedTime) }}</span>
+                <h6 class="artist text-center">{{ song.artist }}</h6>
+                <span class="time right">{{ formatTime(calculateTimeRemaining()) }}</span>
+            </div>
+        </div>
+        <div class="progress">
+            <span class="progress-bar"
+                  [ngStyle]="{ width: calculateProgress() + '%' }"></span>
+        </div>
+    </div>
+</div>

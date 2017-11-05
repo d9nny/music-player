@@ -1,0 +1,14 @@
+@import '../../../styles/styles.less';
+
+.list-container {
+    padding-top: @music-player-height;
+
+    .list-item {
+        border-bottom: 1px solid @light-grey;
+        display: block;
+    }
+
+    @media (max-width: 540px) {
+        padding-top: 2*@music-player-height;
+    }
+}

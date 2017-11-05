@@ -1,0 +1,9 @@
+<div class="list-item vertical-align"
+     [ngClass]="{ selected: currentSong }">
+    <img src="{{ song.thumbnailUrl }}">
+    <span class="title">{{ song.title }}</span>
+    <span class="artist">{{ song.artist }}</span>
+    <span class="date text-right">{{ song.date }}</span>
+    <span class="genre">{{ song.genre }}</span>
+    <span class="duration text-right">{{ formatTime(song.duration) }}</span>
+</div>

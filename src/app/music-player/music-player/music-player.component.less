@@ -1,0 +1,22 @@
+@import '../../../styles/styles.less';
+
+#music-player {
+    height: @music-player-height;
+    background-color: @off-white-1;
+    box-shadow: @box-shadow;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+    .component-container {
+        padding: 0 30px;
+
+        app-music-player-details {
+            width: 100%
+        }
+    }
+
+    @media (max-width: 540px) {
+        height: 2*@music-player-height;
+    }
+}

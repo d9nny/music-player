@@ -1,0 +1,12 @@
+<div class="container-fluid list-container">
+    <div class="row">
+        <div class="col-12">
+            <app-music-list-item
+                *ngFor="let song of songs"
+                [song]="song"
+                [currentSong]="currentSong === song"
+                (click)="selectSong(song)"
+                class="list-item"></app-music-list-item>
+        </div>
+    </div>
+</div>

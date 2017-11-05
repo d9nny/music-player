@@ -1,0 +1,21 @@
+@import '../../../styles/styles.less';
+
+.controls {
+    button {
+        border: none;
+        background-color: transparent;
+        padding: 20px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            color: @color-one;
+        }
+    }
+
+    @media (max-width: 540px) {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}

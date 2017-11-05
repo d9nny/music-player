@@ -1,0 +1,46 @@
+@import '../../../styles/styles.less';
+
+.details-container {
+    width: 80%;
+    height: 46px;
+
+    .details {
+        position: relative;
+        padding: 0 30px;
+
+        .title {
+            margin-bottom: 0;
+        }
+        .time {
+            position: absolute;
+            bottom: 0;
+            font-size: @font-size-sm;
+
+            &.left {
+                left: 0;
+            }
+            &.right {
+                right: 0;
+            }
+        }
+    }
+
+    .progress {
+        height: 3px;
+
+        .progress-bar {
+            height: 100%;
+            background-color: @color-one;
+        }
+    }
+
+    @media (max-width: 800px) {
+        width: 90%;
+    }
+
+    @media (max-width: 540px) {
+        margin-top: 15px;
+        width: 100%;
+
+    }
+}

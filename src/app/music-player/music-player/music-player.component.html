@@ -1,0 +1,20 @@
+<div id="music-player">
+    <div class="container-fluid">
+        <div class="row vertical-align">
+            <div class="col-12 col-sm-3"
+                 [ngClass]="{'flex-last': screenWidth < 540}">
+                <app-music-player-controls
+                    (previous)="handlePrevious()"
+                    (pauseplay)="handlePauseplay()"
+                    (next)="handleNext()"
+                    [playing]="playing"></app-music-player-controls>
+            </div>
+            <div class="col-12 col-sm-9"
+                 [ngClass]="{'flex-first': screenWidth < 540}">
+                <app-music-player-details
+                    [song]="currentSong"
+                    [elapsedTime]="elapsedTime"></app-music-player-details>
+            </div>
+        </div>
+    </div>
+</div>
